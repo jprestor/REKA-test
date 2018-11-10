@@ -210,7 +210,7 @@
 }
 
 a,
-btn,
+button,
 input {
 	outline: none;
 }
@@ -684,6 +684,7 @@ input[type="checkbox"]:checked + .privacy-policy:after {
 	color: #fff;
 	background-color: #3eb5f1;
 	cursor: pointer;
+	border: none;
 	border-radius: 25px;
 	-webkit-transition: 1s ease;
 	-o-transition: 1s ease;
