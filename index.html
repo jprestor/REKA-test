@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>REKA-test</title>
+	<meta name="description" content="Тестовое задание для студии REKA">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body id="main-page">
+	<main>
+		<h1>Recent Recommendations</h1>
+		<p class="caption">How does this work</p>
+
+		<section class="sect-animations">
+			<!-- Clouds -->
+			<object class="hardware" type="image/svg+xml" data="img/hardware.svg"></object>
+
+			<div class="cloud cloud-with-gears">
+				<object type="image/svg+xml" data="img/cloud-big.svg"></object>
+				<object class="gear gear-big" type="image/svg+xml" data="img/gear-big.svg"></object>
+				<object class="gear gear-md" type="image/svg+xml" data="img/gear-md.svg"></object>
+				<object class="gear gear-sm" type="image/svg+xml" data="img/gear-sm.svg"></object>
+			</div>
+
+			<object class="cloud cloud-md" type="image/svg+xml" data="img/cloud-md.svg"></object>
+			<object class="cloud cloud-sm" type="image/svg+xml" data="img/cloud-sm.svg"></object>
+			<!-- ###Clouds -->
+
+			<!-- Transporter -->
+			<div class="goods-hider">
+				<div class="goods-items">
+					<object class="goods-item" type="image/svg+xml" data="img/goods/item1.svg"></object>
+					<object class="goods-item" type="image/svg+xml" data="img/goods/item2.svg"></object>
+					<object class="goods-item" type="image/svg+xml" data="img/goods/item3.svg"></object>
+					<object class="goods-item" type="image/svg+xml" data="img/goods/item4.svg"></object>
+
+					<object class="goods-item" type="image/svg+xml" data="img/goods/item5.svg"></object>
+					<object class="goods-item" type="image/svg+xml" data="img/goods/item6.svg"></object>
+					<object class="goods-item" type="image/svg+xml" data="img/goods/item7.svg"></object>
+					<object class="goods-item" type="image/svg+xml" data="img/goods/item8.svg"></object>
+					<object class="goods-item" type="image/svg+xml" data="img/goods/item9.svg"></object>
+					<object class="goods-item" type="image/svg+xml" data="img/goods/item10.svg"></object>
+					<object class="goods-item" type="image/svg+xml" data="img/goods/item1.svg"></object>
+					<object class="goods-item" type="image/svg+xml" data="img/goods/item2.svg"></object>
+					<object class="goods-item" type="image/svg+xml" data="img/goods/item3.svg"></object>
+					<object class="goods-item" type="image/svg+xml" data="img/goods/item4.svg"></object>
+				</div>
+			</div>
+
+			<div class="transport-line">
+				<object class="sleeve sleeve1" type="image/svg+xml" data="img/sleeve.svg"></object>
+				<object class="sleeve sleeve2" type="image/svg+xml" data="img/sleeve.svg"></object>
+				<object class="sleeve sleeve3" type="image/svg+xml" data="img/sleeve.svg"></object>
+				<object class="sleeve sleeve4" type="image/svg+xml" data="img/sleeve.svg"></object>
+				<object class="shape shape1" type="image/svg+xml" data="img/shape.svg"></object>
+				<object class="shape shape2" type="image/svg+xml" data="img/shape.svg"></object>
+				<object class="shape shape3" type="image/svg+xml" data="img/shape.svg"></object>
+			</div>
+			<!-- ###Transporter -->
+
+			<!-- Screen -->
+			<div class="screen">
+				<object type="image/svg+xml" data="img/screen.svg"></object>
+				<a href="">Buy</a>
+			</div>
+			<!-- ###Screen -->
+
+			<!-- Cart -->
+			<object class="cart cart-item" type="image/svg+xml" data="img/cart-item.svg"></object>
+			<object class="cart cart-handle" type="image/svg+xml" data="img/cart-handle.svg"></object>
+			<object class="cart cart-body" type="image/svg+xml" data="img/cart-body.svg"></object>
+			<object class="cart cart-rocket" type="image/svg+xml" data="img/cart-rocket.svg"></object>
+			<!-- ###Cart -->
+		</section>
+
+		<section class="sect-headings">
+			<p>cloud server</p>
+			<p>recent recommendations</p>
+			<p>shopping cart</p>
+		</section>
+	</main>
+
+	<div class="popup">
+		<form action="">
+			<a href="" class="btn-close"></a>
+			<h2>Оставить заявку</h2>
+
+			<label for="name">ваше имя</label>
+			<input id="name" type="text" name="name" placeholder="Введите имя">
+
+			<label for="email">email</label>
+			<input id="email" type="text" name="email" placeholder="Введите email">
+
+			<label for="text">телефон</label>
+			<input id="text" type="text" name="email" placeholder="+7 (9XX) XXX—XX—XX">
+
+			<input id="privacy" type="checkbox" name="privacy" checked required>
+			<label for="privacy" class="privacy-policy"><span>принимаю <a href="./privacy-policy.html" target="_blank">пользовательское соглашение</a></span></label>
+
+			<btn class="submit" type="submit">отправить заявку</btn>
+		</form>
+	</div>
+
+	<div class="overlay"></div>
+
+	<script src="js/custom.js"></script>
+</body>
+
+</html>
