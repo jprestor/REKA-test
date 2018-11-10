@@ -1,10 +1,18 @@
 'use strict';
 
-const btn = document.querySelector('#main-page .screen a'),
+const mainPage = document.querySelector('#main-page'),
+	main = document.querySelector('main'),
+	btn = document.querySelector('.screen a'),
 	popup = document.querySelector('.popup'),
 	popupCloseBtn = document.querySelector('.btn-close'),
 	overlay = document.querySelector('.overlay'),
-	main = document.querySelector('#main-page main'),
+	loader = document.querySelector('.loader'),
+
+	fadeLoader = () => {
+		setTimeout(() => {
+			loader.style.display = 'none';
+		}, 600);
+	},
 
 	openPopup = (e) => {
 		e.preventDefault();
@@ -20,6 +28,11 @@ const btn = document.querySelector('#main-page .screen a'),
 		popup.setAttribute('style', 'display:none');
 	};
 
-btn.addEventListener('click', openPopup);
-popupCloseBtn.addEventListener('click', closePopup);
-overlay.addEventListener('click', closePopup);
+
+window.addEventListener('load', fadeLoader);
+
+if (mainPage) {
+	btn.addEventListener('click', openPopup);
+	popupCloseBtn.addEventListener('click', closePopup);
+	overlay.addEventListener('click', closePopup);
+};

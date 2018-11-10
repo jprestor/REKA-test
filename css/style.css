@@ -201,6 +201,20 @@
 	}
 }
 
+@keyframes loader {
+	25% {
+		border-color: brown;
+	}
+
+	50% {
+		border-color: coral;
+	}
+
+	75% {
+		border-color: darkgreen;
+	}
+}
+
 /*###Keyframes*/
 
 
@@ -247,6 +261,28 @@ body {
 	height: 100vh;
 	font-family: 'Roboto', sans-serif;
 	text-align: center;
+}
+
+.loader {
+	z-index: 100;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: #00a7e5;
+}
+
+.loader::before {
+	content: "";
+	width: 50px;
+	height: 50px;
+	border: 5px dotted #fff;
+	border-radius: 50%;
+	animation: loader 3s linear infinite, rotate 3s linear infinite;
 }
 
 main {
@@ -527,6 +563,8 @@ p.caption {
 	position: absolute;
 	width: 100%;
 	height: 100%;
+	top: 0;
+	left: 0;
 	background-color: #000;
 	opacity: 0.2;
 	cursor: pointer;
